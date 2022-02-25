@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --black: rgb(46, 46, 51);
+    --white: white;
+    --blueblack: rgb(47, 47, 75);
+    --shadow: rgb(197, 197, 197);
+    --shadow2: rgb(161, 161, 161);
+    --link: rgb(20, 63, 255);
+    --brown: rgb(204, 139, 55);
+    --shadow3: rgb(218, 218, 218);
+}
+
+.header-page {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.header-page-box {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: .5rem 0;
+}
+
+.logo-link {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.user-link {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.nav-page {
+    background-color: var(--blueblack);
+    width: 100%;
+}
+
+.nav-page-box {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.input-nav-box {
+    width: 80%;
+    align-items: center;
+    /* justify-content: space-between; */
+    display: flex;
+    /* background-color: var(--white); */
+}
+
+.search {
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.search::placeholder {
+    font-size: 1rem;
+}
+
+.button {
+    font-size: 1rem;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--shadow);
+    padding: 0 .2rem;
+}
+
+.button:focus {
+    background-color: var(--shadow3);
+}
+
+.fa-box {
+    color: var(--brown);
+    font-size: 1.5rem;
+}
+
+/* CUERPO */
+.main-page {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.main-page-box {
+    width: 90%;
+    margin: auto;
+}
+
+.product-box {
+    width: 15rem;
+    box-shadow: 0px 0px 10px 1px var(--shadow);
+    padding: .5rem;
+    margin: 1rem auto;
+}
+
+.title-product {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--black);
+    font-weight: 500;
+    border-bottom: 1px solid var(--shadow3);
+    text-align: center;
+}
+
+.img-product {
+    width: 10rem;
+    height: 10rem;
+    margin: 1.5rem auto;
+    display: flex;
+}
+
+.description-product {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.vermas {
+    color: var(--link);
+}
+
+.price-product {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+
+.btn {
+    margin: .2rem auto;
+    border: 0;
+    width: 100%;
+    color: white;
+    padding: .5rem;
+    border-radius: .2rem;
+    opacity: 100%;
+}
+
+.btn:focus {
+    opacity: 90%;
+}
+
+.bnt-buy {
+    background-color: var(--blueblack);
+}
+
+.btn-add {
+    background-color: var(--brown);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 580px) {
+    .input-nav-box {
+        width: 80%;
+        align-items: center;
+        /* justify-content: space-between; */
+        display: flex;
+        /* background-color: var(--white); */
+    }
+    
+    .search {
+        font-size: 1.5rem;
+        outline: none;
+        width: 100%;
+    }
+    
+    .search::placeholder {
+        font-size: 1.5rem;
+    }
+    
+    .button {
+        font-size: 1.5rem;
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid var(--shadow);
+        padding: 0 .2rem;
+    }
+    
+    .button:focus {
+        background-color: var(--shadow3);
+    }
+}
+
+@media (min-width: 580px) and (max-width:780px) {
+    .main-page-box {
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 781px) and (max-width: 900px) {
+    .main-page-box {
+        display: grid;
+        width: 98%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+}
+
+@media (min-width: 901px) and (max-width: 1119px) {
+    .main-page-box {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+}
+
+@media (min-width: 1120px) and (max-width: 1409px) {
+    .main-page-box {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    
+}
+
+@media (min-width: 1410px) {
+    .main-page-box {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+}
+
+@media (min-width:780px) {
+    .user-link {
+        font-size: 2rem;
+    }
+
+    .user-link:hover {
+        opacity: 80%;
+    }
+
+    .logo-link {
+        font-size: 2rem;
+    }
+
+    .fa-box {
+        font-size: 2rem;
+    }
+
+    .fa-box:hover {
+        opacity: 80%;
+    }
+
+    .btn:hover {
+        opacity: 80%;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .price-product {
+        font-size: 1.5rem;
+    }
+
+    .title-product {
+        font-size: 1.4rem;
+    }
+
+    .logo-link:hover {
+        opacity: 80%;
+    }
+
+    .description-product {
+        font-size: 1.3rem;
+    }
+
+    .product-box:hover {
+        opacity: 100%;
+    }
+
+    .product-box {
+        opacity: 90%;
+    }
+}

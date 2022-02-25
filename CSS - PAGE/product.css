@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --black: rgb(46, 46, 51);
+    --white: white;
+    --blueblack: rgb(47, 47, 75);
+    --shadow: rgb(197, 197, 197);
+    --shadow2: rgb(161, 161, 161);
+    --link: rgb(20, 63, 255);
+    --brown: rgb(204, 139, 55);
+    --shadow3: rgb(218, 218, 218);
+}
+
+.header-page {
+    width: 100%;
+    background-color: var(--black);
+}
+
+.header-page-box {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: .5rem 0;
+}
+
+.logo-link {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.user-link {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.nav-page {
+    background-color: var(--blueblack);
+    width: 100%;
+}
+
+.nav-page-box {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.input-nav-box {
+    width: 80%;
+    align-items: center;
+    /* justify-content: space-between; */
+    display: flex;
+    /* background-color: var(--white); */
+}
+
+.search {
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.search::placeholder {
+    font-size: 1rem;
+}
+
+.button {
+    font-size: 1rem;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--shadow);
+    padding: 0 .2rem;
+}
+
+.button:focus {
+    background-color: var(--shadow3);
+}
+
+.fa-box {
+    color: var(--brown);
+    font-size: 1.5rem;
+}
+
+/* CUERPO */
+.main-page {
+    width: 100%;
+}
+
+.main-page-box {
+    width: 90%;
+    margin: auto;
+}
+
+.product-box {
+    width: 15rem;
+    padding: .5rem;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.img-box {
+    width: 50%;
+    /* align-items: center; */
+    /* display: flex; */
+    position: fixed;
+    left: 45%;
+}
+
+.especifications {
+    width: 40%;
+}
+
+.title-product {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--black);
+    font-weight: 500;
+    text-align: left;
+}
+
+.img-product {
+    width: 100%;
+    margin: auto;
+}
+
+.img-2 {
+    display: none;
+}
+
+.description-product {
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.vermas {
+    color: var(--link);
+}
+
+.price-product {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.btn {
+    margin: 1rem auto;
+    border: 0;
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    border-radius: .2rem;
+    opacity: 100%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:focus {
+    opacity: 90%;
+}
+
+.bnt-buy {
+    background-color: var(--blueblack);
+}
+
+.btn-add {
+    background-color: var(--brown);
+}
+
+/* gallery */
+.gallery {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    margin-left: 110%;
+}
+
+.date2 {
+    display: none;
+}
+
+.gallery-img-box {
+    width: 100%;
+}
+
+.gallery-img {
+    width: 15rem;
+    display: flex;
+    margin: auto;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* outline: 1px solid red; */
+}
+@media (min-width: 580px) {
+    .input-nav-box {
+        width: 80%;
+        align-items: center;
+        /* justify-content: space-between; */
+        display: flex;
+        /* background-color: var(--white); */
+    }
+    
+    .search {
+        font-size: 1.5rem;
+        outline: none;
+        width: 100%;
+        padding: .2rem 0;
+    }
+    
+    .search::placeholder {
+        font-size: 1.5rem;
+    }
+    
+    .button {
+        font-size: 1.5rem;
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid var(--shadow);
+        padding: .2rem .2rem;
+    }
+    
+    .button:focus {
+        background-color: var(--shadow3);
+    }
+}
+
+@media (min-width:780px) {
+    .user-link {
+        font-size: 2rem;
+    }
+
+    .user-link:hover {
+        opacity: 80%;
+    }
+
+    .logo-link {
+        font-size: 2rem;
+    }
+
+    .fa-box {
+        font-size: 2rem;
+    }
+
+    .fa-box:hover {
+        opacity: 80%;
+    }
+
+    .btn:hover {
+        opacity: 80%;
+    }
+}
+
+@media (min-width:200px) and (max-width: 1024px) {
+    .main-page {
+        width: 100%;
+    }
+    
+    .main-page-box {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .product-box {
+        width: 15rem;
+        padding: .5rem;
+        width: 100%;
+    }
+    
+    .img-box {
+        display: none;
+    }
+    
+    .especifications {
+        width: 100%;
+    }
+    
+    .title-product {
+        font-size: 1.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--black);
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .img-product {
+        width: 15rem;
+        display: flex;
+        margin: 1rem auto;
+    }
+    
+    .description-product {
+        width: 100%;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    
+    .vermas {
+        color: var(--link);
+    }
+    
+    .price-product {
+        color: var(--black);
+        font-weight: 500;
+        font-size: 2rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    
+    .btn {
+        margin: .5rem auto;
+        border: 0;
+        width: 100%;
+        color: white;
+        padding: 1rem;
+        border-radius: .2rem;
+        opacity: 100%;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    
+    .btn:focus {
+        opacity: 90%;
+    }
+    
+    .bnt-buy {
+        background-color: var(--blueblack);
+    }
+    
+    .btn-add {
+        background-color: var(--brown);
+    }  
+}
+
+@media (min-width:1024px) {
+    .dateproduct {
+        display: none;
+    }
+
+    .date2 {
+        display: block;
+    }
+}
+
+@media (min-width: 680px) and (max-width:800px) {
+    .gallery-img-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-img {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 801px) and (max-width:1023) {
+    .gallery-img-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-img {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 1900px) {
+    .gallery-img-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-img {
+        width: 10rem;
+    }
+}
