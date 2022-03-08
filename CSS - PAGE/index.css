@@ -60,13 +60,14 @@
     align-items: center;
     /* justify-content: space-between; */
     display: flex;
-    /* background-color: var(--white); */
 }
 
 .search {
     font-size: 1rem;
     outline: none;
     width: 100%;
+    background-color: var(--white);
+    border: 0;
 }
 
 .search::placeholder {
@@ -77,8 +78,7 @@
     font-size: 1rem;
     color: var(--black);
     background-color: var(--white);
-    border: 1px solid var(--shadow);
-    padding: 0 .2rem;
+    border: 0;
 }
 
 .button:focus {
@@ -180,18 +180,25 @@
         font-size: 1.5rem;
         outline: none;
         width: 100%;
+        border-radius: .3rem;
     }
     
     .search::placeholder {
         font-size: 1.5rem;
+    }
+
+    .input-nav-box {
+        background-color: white;
+        border-radius: .3rem;
     }
     
     .button {
         font-size: 1.5rem;
         color: var(--black);
         background-color: var(--white);
-        border: 1px solid var(--shadow);
-        padding: 0 .2rem;
+        border: 0;
+        padding: 0 .3rem;
+        border-radius: .3rem;
     }
     
     .button:focus {

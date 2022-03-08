@@ -208,7 +208,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* outline: 1px solid red; */
 }
-@media (min-width: 580px) {
+@media (min-width: 200px) {
     .input-nav-box {
         width: 80%;
         align-items: center;
@@ -221,19 +221,26 @@
         font-size: 1.5rem;
         outline: none;
         width: 100%;
-        padding: .2rem 0;
+        border-radius: .3rem;
+        border: 0;
     }
     
     .search::placeholder {
         font-size: 1.5rem;
+    }
+
+    .input-nav-box {
+        background-color: white;
+        border-radius: .3rem;
     }
     
     .button {
         font-size: 1.5rem;
         color: var(--black);
         background-color: var(--white);
-        border: 1px solid var(--shadow);
-        padding: .2rem .2rem;
+        border: 0;
+        padding: 0 .3rem;
+        border-radius: .3rem;
     }
     
     .button:focus {
