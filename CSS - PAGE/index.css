@@ -167,7 +167,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (min-width: 200px) {
+@media (min-width: 0px) {
     .input-nav-box {
         width: 80%;
         align-items: center;
